@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image: url("images/background.jpeg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+    
+}
+
+
+
+
+/* hides the scrollbar */
+.row .task-box{
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  
+  /* Hide the scrollbar for WebKit browsers (Safari, Chrome) */
+  .row::-webkit-scrollbar .task-box::-webkit-scrollbar{
+    display: none;
+  }
+
+  .modal-backdrop{
+    display: none;
+  }
+  

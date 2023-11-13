@@ -10,7 +10,7 @@ export default function Signup() {
   const { signup } = useContext(TaskContext);
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
+    e.preventDefault(); 
     signup(email, password, name);
   };
 

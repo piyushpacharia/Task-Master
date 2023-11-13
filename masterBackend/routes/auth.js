@@ -11,7 +11,6 @@ router.get("/activate-account/:token", activateAccount);
 router.post("/login",login);
 router.post("/forget-password", sendForgetPasswordLink);
 
-// Hanlde the forget password request
 router.post("/handle-update-password", handlePasswordUpdateDetails);
 
 

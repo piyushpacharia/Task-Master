@@ -35,7 +35,7 @@ const markAsComplete=(req,res)=>{
             return res.json({success:true,data:"Task Updated"});
         }
         else{
-            return res.json({success:false,data:"no document found"})
+            return res.json({success:false,data:"No Task found"})
         }
     }).catch((err)=>res.json({success:false,data:err.message}))
 }
@@ -47,10 +47,10 @@ const deleteTask =(req,res)=>{
     })
     .then((doc)=>{
         if(doc){
-            return res.json({success:true,data:"Document Deleted"});
+            return res.json({success:true,data:"Task Deleted"});
         }
         else{
-            return res.json({success:false,data:"No document found"});
+            return res.json({success:false,data:"No Task found"});
         }
     })
     .catch((err)=>res.json({success:false,data:err.message}));

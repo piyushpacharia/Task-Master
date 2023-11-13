@@ -27,7 +27,7 @@ export default function ForgetPasswordInput() {
         if (data.success == false) {
           toast.error(data.message);
         } else {
-          // if Task is deleted successfully
+          // if Task is Updated successfully
           toast.success("Password Updated Successfully")
           navigate("/");
         }

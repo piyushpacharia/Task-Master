@@ -39,7 +39,7 @@ const login=(email,password)=>{
       }
      })
      .catch((err) => {
-      console.log("Error", err.messsage);
+      console.log("Error", err.message);
     });
 }
 
@@ -117,7 +117,7 @@ const fetchAllTasks=()=>{
   };
 
 const deleteTasks=(taskId)=>{
-  let userAction = confirm("Are you sure ? You want to delte this Task?");
+  let userAction = confirm("Are you sure ? You want to delete this Task?");
   if(userAction == false){
     return;
   }
